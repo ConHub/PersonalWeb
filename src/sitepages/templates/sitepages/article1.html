@@ -1,0 +1,68 @@
+
+{% extends 'base2.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+{% block body %}
+  
+
+	<body class="bg-dark">
+    
+
+        <section class="slice slice-lg">
+            <div class="container pt-lg-lg">
+                <div class="row justify-content-center">
+                    <div class="col-md-9">
+                        <h1 class="lh-150 mb-3 text-white">How to create a custom user model - Using Django 2.0.</h1>
+                        <div class="media align-items-center mt-5">
+                            <div class="media-body">
+                                <span class="h6 mb-0 text-white">Conor Sturgess</span>
+                                <span class="text-small  text-white">8th July 2018</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-cover bg-size--cover" style="height: 500px; background-image: url('static/img/code4.jpeg'); background-position: top center;"></section>
+        <section class="slice">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <!-- Article body -->
+                        <article>
+                            </br>
+                            <p class="lead text-white">Why create a custom user model? Creating a custom user model allows your users to sign in with their own email address instead of having to remember their username.</p>
+                            <p class="lead text-white">In this article I will present to you a quick way to implement your own Django User Model. However, I would strongly suggest you read up on this from Django documentation, as implementing anything you should know how's and the why's of your own code.</p>
+                            
+
+                        </br>
+                            <h5 class="text-white">First thing you need to do</h5>
+                            <p class="text-white"> Copy and paste this code into your Models.py file.</p>
+                        <script src="https://gist.github.com/ConHub/9f66d3dd6f9478a72052355842cb1f30.js"></script>
+
+                        </br>
+                            <h5 class="text-white">Second thing you need to do</h5>
+                            <p class="text-white"> Copy and paste this code into your forms.py file.</p>
+                        <script src="https://gist.github.com/ConHub/62474b3abcaa606342a1ec1b933a8114.js"></script>
+
+                        </br>
+                            <h5 class="text-white">Lastly, you need to..</h5>
+                            <p class="text-white"> Copy and paste this code into your admin.py file.</p>
+                        <script src="https://gist.github.com/ConHub/14efcd07c4faf2aa230a095b996aabdc.js"></script>
+
+                    </article>
+
+                </section>
+
+
+
+            </main>
+  
+    
+        </body>
+        {% endblock %}
+        
+        
+        </html>

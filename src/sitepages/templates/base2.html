@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="author" content="Kodinger">
+		<meta name="keyword" content="Kodinger, template, html5, css3, bootstrap4">
+		<meta name="description" content="HTML5 and CSS3 Template Based on Bootstrap 4">
+		<title>Conor Sturgess / London</title>
+		<link rel="stylesheet" href="{% static '/ionicons/css/ionicons.min.css' %}">
+		<link rel="stylesheet" href="{% static '/bootstrap/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static '/sweetalert/dist/sweetalert.css' %}">
+		<link rel="stylesheet" href="{% static '/css/style.css' %}">
+		<link rel="stylesheet" href="{% static '/css/hover.css' %}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
+
+	</head>
+
+	<body class="bg-dark">
+		
+		<nav class="navbar navbar-expand-lg main-navbar">
+			<div class="container-fluid">			
+			  <a class="navbar-brand" href="#">
+			  </a>
+			  <div class="" id="">
+				  <div class="mr-auto"></div>
+			    <ul class="navbar-nav">
+			      <li class="nav-item active">
+			        <a class="nav-link smooth-link" href="{% url 'sitepages:index' %}">Home</a>
+				  </li>
+				  <li class="nav-item">
+			        <a class="nav-link smooth-link" href="{% url 'sitepages:index' %}">About</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link smooth-link" href="{% url 'sitepages:index' %}">Blog</a>
+			      </li>
+			    </ul>
+			  </div>
+		  </div>
+        </nav>
+        
+
+        {% block body %}
+        {% endblock %}
+
+
+        <footer id="contact" class="bg-dark py-5">
+			<div class="container">
+		
+				<p class="text-white">
+					Telephone: 07929 581 522
+				</p>
+				<p class="text-white">
+					Email: conorjohn.sturgess@gmail.com
+				</p>
+			</div>
+		</footer>
+
+		<script src="{% static '/js/jquery.min.js' %}"></script>
+		<script src="{% static '/bootstrap/js/bootstrap.min.js' %}"></script>
+		<script src="{% static '/js/jquery.easeScroll.js' %}"></script>
+		<script src="{% static '/sweetalert/dist/sweetalert.min.js' %}"></script>
+		<script src="{% static '/js/app.js' %}"></script>
+		<script>
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			var ballRadius = 200;
+			var x = canvas.width/2;
+			var y = canvas.height-30;
+			var dx = 2;
+			var dy = -2;
+			
+			function drawBall() {
+				ctx.beginPath();
+				ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+				ctx.fillStyle = "#17c1f4";
+				ctx.fill();
+				ctx.closePath();
+			}
+			
+			function draw() {
+				ctx.clearRect(0, 0, canvas.width, canvas.height);
+				drawBall();
+				
+				if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+					dx = -dx;
+				}
+				if(y + dy > canvas.height-ballRadius || y + dy < ballRadius) {
+					dy = -dy;
+				}
+				
+				x += dx;
+				y += dy;
+			}
+			
+			setInterval(draw, 10);
+			
+
+
+			</script>
+			
+	</body>
+</html>

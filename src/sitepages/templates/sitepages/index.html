@@ -1,0 +1,221 @@
+
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<body>
+		{% block body %}
+
+    <main>
+		
+
+<section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</section>
+
+		<section class="hero bg-overlay" id="hero">
+		<div class="container">
+			<div class="text ">
+				<p class="line-1 anim-typewriter">London based</span> Web Developer.</p>
+			</br>
+				<p class="lead code-font"> HTML5, CSS3 &amp; Python/Django Development</p>
+				
+				<br>
+					<div class="cta effects">
+						<a href=""><i class="fab fa-github hvr-buzz-out h2 skyblue"></i></a>
+					</div>
+					
+					<div class="cta effects">
+						<a href=""><i class="fab fa-instagram hvr-buzz-out h2 skyblue"></i></a>
+					</div>
+
+				<br/>
+
+				<div class="cta hvr-icon-grow-rotate">
+					<a href="" class="btn btn-info smooth-link hvr-icon">Reset Animation</a>
+				</div>
+			</div>
+		</div>
+
+		</section>
+
+		<section class="padding bg-dark text-white" id="features">
+			
+		<div class="py-5">
+			<div class="container">
+				<br/>
+				<div class="row">
+					<div class="col-12 col-md-4 col-sm-12">
+						<div class="">
+							<div class="icon">
+								<i class="ion-code"></i>
+							</div>
+							<div class="desc hvr-icon-up">
+								<h2 class="text-center code-font ">HTML5 &amp; CSS3 <i class="fas fa-code hvr-icon skyblue"></i></h2>
+								<p class="text-center">
+									I use the latest HTML and CSS. By doing this I offer a lot of long-awaited novelties, like shadows, gradients, animations and transitions
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-sm-12">
+						<div class="">
+							<div class="icon">
+
+							</div>
+							
+							<div class="desc hvr-icon-up">
+								<h2 class="text-center code-font">JAVASCRIPT <i class="fab fa-js hvr-icon skyblue"></i></h2>
+								<p class="text-center">
+										I use Javascript to implement a more dynamic webpage, displaying interative maps, or animated 2D graphics.
+								</p>
+
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-12 col-md-4 col-sm-12">
+						<div class=" no-spacing">
+							<div class="icon">
+								<i class="ion-paintbrush"></i>
+							</div>
+							<div class="desc hvr-icon-up">
+								<h2 class="text-center code-font">PYTHON/DJANGO <i class="fab fa-python hvr-icon skyblue"></i></h2>
+								<p class="text-center">
+										I use python/ Django for creating bespoke products including invoicing, e-commerce, or projects requiring custom workflows.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+
+
+
+
+		<section>
+	<div class="py-5">
+		<div class="container floating-items">
+				<div class="floating-icon"><span></span>
+				</div>
+				<div class="floating-icon"><span></span>
+				</div>
+				<div class="floating-icon"><span></span>
+				</div>
+		</div>
+	</div>
+
+		</section>
+
+
+		<section class="bg-overlay padding" id="about">
+		<div class="py-5">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-6">
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="projects-details">
+							<div class="projects-badge text-white">
+								About
+							</div>
+							<h2 class="projects-title text-white">Freelance Web Designer</h2>
+							<p class="projects-description text-white">
+								I'm Conor, an independent freelance web designer. I have a proven track record for helping businsses grow and get noticed online, and have succesfully worked with companies of all sizes. I build websites that use modern tools, making code fast, easy to read - giving your site a professional finish.
+							</p>
+							
+							<div class="projects-cta effects">
+								<button type="button" class="btn btn-info smooth-link hvr-buzz-out">
+									Contact Today
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<canvas id="myCanvas"  class ="container py-5" width="880" height="20"></canvas>
+
+
+
+		<section class="padding bg-grey py-5" id="blog">
+			<div class="container">
+				<h2 class="section-title">Blog</h2>
+				<p class="section-lead text-muted">I wrote some quick setup methods on how to create certain models to help newcomers to Django get started.</p>
+				<div class="section-body">
+					<div class="row col-spacing">
+						<div class="col-12 col-md-6 col-lg-4">
+							<article class="card">
+							  <img class="card-img-top" src="{% static 'img/code4.jpeg' %}" alt="Article Image">
+							  <div class="card-body">
+								  <div class="card-subtitle mb-2 text-muted">by <a href="">Conor Sturgess</a> on June, 2018</div>
+							    <h4 class="card-title"><a href="{% url 'sitepages:article1' %}" data-toggle="" data-id="">How to create a custom user model - Django</a></h4>
+							    <p class="card-text"></p>
+							    <div class="text-right">						    	
+								    <a href="{% url 'sitepages:article1' %}" class="" data-toggle="" data-id="">Read More <i class="ion-ios-arrow-right"></i></a>
+							    </div>
+						    </div>
+						  </article>
+					  </div>
+					  <div class="col-12 col-md-6 col-lg-4">
+							<article class="card">
+							  <img class="card-img-top" src="{% static 'img/Code1.jpeg' %}" alt="Article Image">
+							  <div class="card-body">
+								<div class="card-subtitle mb-2 text-muted">by <a href="#">Conor Sturgess</a> on June, 2018</div>
+							    <h4 class="card-title"><a href="{% url 'sitepages:article2' %}" data-toggle="" data-id="">How to upload profile images to users - Django</a></h4>
+							    <p class="card-text"></p>
+							    <div class="text-right">						    	
+								    <a href="{% url 'sitepages:article2' %}" class="" data-toggle="" data-id="">Read More <i class="ion-ios-arrow-right"></i></a>
+							    </div>
+						    </div>
+						  </article>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<article class="card">
+								<img class="card-img-top" src="{% static 'img/code3.jpeg' %}" alt="Article Image">
+								<div class="card-body">
+									<div class="card-subtitle mb-2 text-muted">by <a href="#">Conor Sturgess</a> on June, 2018</div>
+									<h4 class="card-title"><a href="#" >How to create a blog posting app - Django</a></h4>
+									<p class="card-text"></p>
+									<div class="text-right">						    	
+										<a href="./article1.html" class="" data-toggle="" data-id="">Read More <i class="ion-ios-arrow-right"></i></a>
+									</div>
+								</div>
+							</article>
+					  </div>
+						    </div>
+						  </article>
+						</div>
+					</div>
+				</div>
+
+		</section>
+    </main>
+  
+    {% endblock %}
+
+</body>
+
+
+</html>
+
+
+

@@ -1,0 +1,65 @@
+
+{% extends 'base2.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+{% block body %}
+  
+
+	<body class="bg-dark">
+
+    <main>
+        <section class="slice slice-lg">
+            <div class="container pt-lg-lg">
+                <div class="row justify-content-center">
+                    <div class="col-md-9">
+                        <h1 class="lh-150 mb-3 text-white">How to upload profile pictures to users - Using Django 2.0.</h1>
+                        <div class="media align-items-center mt-5">
+                            <div class="media-body">
+                                <span class="h6 mb-0 text-white">Conor Sturgess</span>
+                                <span class="text-small  text-white">9th July 2018</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-cover bg-size--cover" style="height: 500px; background-image: url('static/img/Code1.jpeg'); background-position: top center;"></section>
+        <section class="slice">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <!-- Article body -->
+                        <article>
+                            </br>
+                            <p class="lead text-white">Why have images of users? Creating a custom user model allows you to create a sense of personalisation amongst your own users. In other articles I will highlight how to allow users to upload their own images .</p>
+                            <p class="lead text-white">In this article I will present to you a quick way to implement your code. However, I would strongly suggest you read up on this from Django documentation, as implementing anything you should know how's and the why's of your own code.</p>
+                            
+
+                        </br>
+                            <h5 class="text-white">First thing you need to do</h5>
+                            <p class="text-white"> Copy and paste this code into your Models.py file.</p>
+                            <script src="https://gist.github.com/conoruk/14a35e49dea21597744ac2eeabdba81b.js"></script>
+                        </br>
+                            <h5 class="text-white">Second thing you need to do</h5>
+                            <p class="text-white"> Copy and paste this code into your forms.py file.</p>
+                            <script src="https://gist.github.com/conoruk/d9f4542db894091693441c2f9fbd14f2.js"></script>                        
+                        </br>
+                            <h5 class="text-white">Lastly, you need to..</h5>
+                            <p class="text-white"> Copy and paste this code into your admin.py file.</p>
+                            <script src="https://gist.github.com/conoruk/2c910d7efba3f68cd5b20f9758407f78.js"></script>
+                    </article>
+
+                </section>
+
+
+
+            </main>
+  
+    
+        </body>
+        {% endblock %}
+        
+        
+        </html>
